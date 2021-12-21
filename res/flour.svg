@@ -1,0 +1,17 @@
+<svg width="228.2" height="228.2" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1">
+
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" fill="none" height="228.2" width="228.2" class="st0"/>
+  <circle id="svg_2" fill="#FFFFFF" r="37.4" cy="114.1" cx="114.1" class="st1"/>
+  <g fill="#006A65" id="svg_3">
+   <path id="svg_4" fill="#006A65" d="m167.9,25.7l-95,0l0,-17.6l95,0l0,17.6l0,0zm5.8,22.5l0,156.8c0,8.3 -4.3,15 -9.5,15l-87.5,0c-5.2,0 -9.5,-6.8 -9.5,-15l0,-156.8c0,-8.3 4.3,-15 9.5,-15l87.5,0c5.2,0 9.5,6.8 9.5,15zm-40.8,46.2c7.9,12.5 16.4,-27.2 16.4,-27.2c-2.7,0.9 -24.3,14.7 -16.4,27.2zm-12.8,5.9c3.3,5.2 11.6,1 7.2,-17.4c-3.9,-16.3 1.7,-23.4 1.7,-23.4c-2.7,1.5 -16.3,29.1 -8.9,40.8zm-10.7,16.9c3.3,5.2 11.6,1 7.2,-17.4c-3.9,-16.3 1.7,-23.4 1.7,-23.4c-2.6,1.4 -16.3,29.1 -8.9,40.8zm-10.7,29.3c-1.4,-2.3 -1.8,-5.4 -2.7,-4l-8.8,17c-1,1.6 1.5,8.3 3.6,5l10.4,-13.8c0.9,-1.4 -1.1,-2 -2.5,-4.2zm6.9,-29.2c-3.9,-16.3 1.7,-23.4 1.7,-23.4c-2.7,1.4 -16.4,29 -9,40.8c3.4,5.2 11.7,0.9 7.3,-17.4zm26.6,15.8c0,0 -4.5,8.9 -14.8,2.7c-11.6,-6.9 -14.3,6.2 -11,11.4c7.4,11.7 24.9,-9.9 25.8,-14.1zm11,-17.4c0,0 -4.5,8.9 -14.8,2.7c-11.6,-6.9 -14.3,6.2 -11,11.5c7.4,11.6 24.9,-10 25.8,-14.2zm10.7,-16.9c0,0 -4.5,8.9 -14.8,2.7c-11.6,-6.9 -14.3,6.2 -11,11.4c7.4,11.8 24.9,-9.9 25.8,-14.1z" class="st2"/>
+  </g>
+  <text id="svg_5" transform="matrix(1 0 0 1 79 186)">
+   <tspan id="svg_6" font-size="12px" font-family="'MyriadPro-Regular'" stroke-miterlimit="10" stroke="#AFAFAF" fill="#FFFFFF" class="st3 st4 st5" y="0" x="0"/>
+   <tspan id="svg_7" font-size="16px" stroke-miterlimit="10" stroke-width="0.5" stroke="#AFAFAF" fill="#FFFFFF" font-family="'MyriadPro-Regular'" class="st6 st4 st7" y="0" x="17.8">FLOUR</tspan>
+  </text>
+  <rect stroke-width="0" id="svg_9" height="22" width="67" y="170.10001" x="93.10001" stroke="#000" fill="#006A65"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_12" y="199.10001" x="96.10001" stroke-width="0" stroke="#000" fill="#ffffff">面粉</text>
+ </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="84.1" height="107.6" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1">
+
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" stroke-miterlimit="10" stroke="#111008" fill="#FFFFFF" d="m69.6,23.2c-8.8,-13.9 -19,-22.2 -27.5,-22.2c-8.5,0 -18.8,8.3 -27.5,22.2c-8.5,13.6 -13.6,29.4 -13.6,42.2c0,13.1 4.2,24 12,31.3c7.3,6.8 17.3,10.4 29.1,10.4s21.8,-3.6 29.1,-10.4c7.9,-7.4 12,-18.2 12,-31.3c0,-12.8 -5.1,-28.6 -13.6,-42.2l0,0z" class="st0"/>
+  <text id="svg_2" transform="matrix(1 0 0 1 19 56)">
+   <tspan id="svg_3" font-size="12px" font-family="'MyriadPro-Regular'" class="st1 st2" y="0" x="0"/>
+   <tspan id="svg_4" font-size="18px" font-family="'MyriadPro-Regular'" class="st1 st3" y="0" x="5.1">EGG</tspan>
+  </text>
+  <rect id="svg_5" height="33" width="46" y="29.79999" x="18.04999" stroke-width="0" stroke="#000" fill="#ffffff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_6" y="63.79999" x="30.04999" stroke-width="0" stroke="#000" fill="#000000">蛋</text>
+ </g>
+</svg>
