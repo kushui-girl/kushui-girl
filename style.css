@@ -1,835 +1,540 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.human-heart {
-  margin: 5em;
-  animation: .8s infinite beatHeart;
+@import url(https://fonts.googleapis.com/css?family=Damion);
+* {
+  box-sizing: border-box;
+  font-weight: normal;
 }
 
-@keyframes beatHeart {
+body {
+  font-family: "Damion", cursive;
+  background: #fbefec;
+  background: radial-gradient(ellipse at center, #fbefec 0%, #dab4b4 100%);
+  height: 100vh;
+  overflow: hidden;
+}
+body .birthday .add {
+  margin-top: 40px;
+  clear: both;
+  font-family: "Damion", cursive;
+  background: transparent;
+  border: 2px solid #e77572;
+  color: #e77572;
+  font-size: 22px;
+  padding: 14px 28px;
+  border-radius: 40px;
+  transition: all 0.23s;
+  outline: none;
+  cursor: pointer;
+}
+body .birthday .add:hover {
+  background: #e77572;
+  color: white;
+}
+body .birthday_inner__modal {
+  width: 500px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: all 0.4s;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  background: white;
+  border-radius: 20px;
+  z-index: 2;
+  padding: 40px 40px 100px 40px;
+  box-shadow: 0px 3px 10px 0px #E5B4B2;
+}
+body .birthday_inner__modal .modal_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-60%);
+}
+body .birthday_inner__modal .modal_image img {
+  width: 100px;
+}
+body .birthday_inner__modal h1 {
+  color: #e77572;
+  margin: 0;
+}
+body .birthday_inner__modal p {
+  font-family: "georgia";
+  font-size: 20px;
+  color: #b9918e;
+}
+body .birthday_inner__modal button {
+  background: #e77572;
+  color: white;
+  outline: none;
+  padding: 20px 20px 20px 20px;
+  border: none;
+  width: 100%;
+  font-size: 30px;
+  font-family: "Damion", cursive;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+body .birthday_inner__modal button:hover {
+  background: #e3605c;
+}
+body .birthday_inner .stage1 {
+  display: block;
+}
+body .birthday_inner__stage {
+  width: 500px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  display: none;
+  transform: translateY(-50%);
+}
+body .birthday_inner__stage h1 {
+  color: #e77572;
+  margin: 0;
+}
+body .birthday_inner__stage h2 {
+  font-family: "georgia";
+  font-size: 20px;
+  color: #e77572;
+  line-height: 50px;
+  margin: 0;
+}
+body .birthday_inner__stage .mix {
+  margin: 80px 0px 10px 0px;
+  position: relative;
+}
+body .birthday_inner__stage .mix_spoon {
+  position: absolute;
+  top: -37px;
+  left: 200px;
+  -webkit-transform: rotate(0deg) translateX(15px) translateY(3px) rotate(0deg) scale(1);
+}
+body .birthday_inner__stage .mix .move {
+  -webkit-animation: mix 1s 0s linear;
+          animation: mix 1s 0s linear;
+}
+body .birthday_inner__stage img.intro {
+  width: 300px;
+  transform: scale(0);
+  -webkit-animation: bounce 0.6s 1s forwards, moveup 0.6s 2s forwards;
+          animation: bounce 0.6s 1s forwards, moveup 0.6s 2s forwards;
+  position: relative;
+  top: 0px;
+}
+body .birthday_inner__stage .oven {
+  margin-top: 50px;
+  margin-bottom: -40px;
+}
+body .birthday_inner__stage .oven img {
+  width: 290px;
+  position: relative;
+  left: -10px;
+}
+body .birthday_inner__stage .tin img {
+  width: 90px;
+}
+body .birthday_inner__stage .candle {
+  position: Relative;
+  opacity: 0;
+  -webkit-animation: candle 1s 1.3s forwards;
+          animation: candle 1s 1.3s forwards;
+  top: 10px;
+}
+body .birthday_inner__stage .candle img {
+  width: 10px;
+}
+body .birthday_inner__stage .startagain {
+  position: absolute;
+  right: 0;
+  top: 350px;
+  font-size: 24px;
+  color: #e77572;
+}
+body .birthday_inner__stage .cakemake {
+  margin-top: 230px;
+  clear: both;
+  text-align: center;
+}
+body .birthday_inner__stage .cakemake .sponge, body .birthday_inner__stage .cakemake .base {
+  height: 40px;
+  margin: 0 auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-bottom: -10px;
+  position: relative;
+  background-image: -webkit-repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255, 255, 255, 0.2) 5px, rgba(255, 255, 255, 0.2) 10px);
+}
+body .birthday_inner__stage .cakemake .sponge div, body .birthday_inner__stage .cakemake .base div {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: Red;
+  border-radius: 100px;
+  top: -5px;
+  z-index: 4;
+}
+body .birthday_inner__stage .cakemake .sponge div:nth-of-type(1), body .birthday_inner__stage .cakemake .base div:nth-of-type(1) {
+  left: 0%;
+  margin-left: 6px;
+}
+body .birthday_inner__stage .cakemake .sponge div:nth-of-type(2), body .birthday_inner__stage .cakemake .base div:nth-of-type(2) {
+  left: 20%;
+  margin-left: 6px;
+}
+body .birthday_inner__stage .cakemake .sponge div:nth-of-type(3), body .birthday_inner__stage .cakemake .base div:nth-of-type(3) {
+  left: 40%;
+  margin-left: 6px;
+}
+body .birthday_inner__stage .cakemake .sponge div:nth-of-type(4), body .birthday_inner__stage .cakemake .base div:nth-of-type(4) {
+  left: 60%;
+  margin-left: 6px;
+}
+body .birthday_inner__stage .cakemake .sponge div:nth-of-type(5), body .birthday_inner__stage .cakemake .base div:nth-of-type(5) {
+  left: 80%;
+  margin-left: 6px;
+}
+body .birthday_inner__stage .cakemake .sponge div:nth-of-type(6), body .birthday_inner__stage .cakemake .base div:nth-of-type(6) {
+  left: 100%;
+  margin-left: 6px;
+}
+body .birthday_inner__stage .cakemake .sponge div:nth-of-type(7), body .birthday_inner__stage .cakemake .base div:nth-of-type(7) {
+  left: 120%;
+  margin-left: 6px;
+}
+body .birthday_inner__stage .cakemake .sponge div:nth-of-type(8), body .birthday_inner__stage .cakemake .base div:nth-of-type(8) {
+  left: 140%;
+  margin-left: 6px;
+}
+body .birthday_inner__stage .cakemake .sponge div:nth-of-type(9), body .birthday_inner__stage .cakemake .base div:nth-of-type(9) {
+  left: 160%;
+  margin-left: 6px;
+}
+body .birthday_inner__stage .cakemake .sponge div:nth-of-type(10), body .birthday_inner__stage .cakemake .base div:nth-of-type(10) {
+  left: 180%;
+  margin-left: 6px;
+}
+body .birthday_inner__stage .cakemake .filling {
+  height: 10px;
+  margin: 0 auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-bottom: -1px;
+  position: relative;
+  z-index: 1;
+  top: 9px;
+}
+body .birthday_inner__stage .cakemake .filling div {
+  display: block;
+  width: 12.5%;
+  float: left;
+  height: 16px;
+  background: black;
+  border-radius: 100%;
+}
+body .birthday_inner__stage .cakemake .base {
+  width: 200px;
+  background-color: #ffd296;
+}
+body .birthday_inner__stage .cakemake .sponge {
+  width: 200px;
+}
+body .birthday_inner__stage .cakemake .filling {
+  width: 200px;
+}
+body .birthday_inner__stage .cakemake .sponge-vanilla {
+  background-color: #ffd296;
+}
+body .birthday_inner__stage .cakemake .sponge-vanilla div {
+  background: #CAA068;
+}
+body .birthday_inner__stage .cakemake .sponge-strawberry {
+  background-color: #ff99a3;
+}
+body .birthday_inner__stage .cakemake .sponge-strawberry div {
+  background: #E27983;
+}
+body .birthday_inner__stage .cakemake .sponge-fruit {
+  background-color: #d5ccb2;
+}
+body .birthday_inner__stage .cakemake .sponge-fruit div {
+  background: #A9A088;
+}
+body .birthday_inner__stage .cakemake .filling-jam {
+  background: #e75656;
+}
+body .birthday_inner__stage .cakemake .filling-jam div {
+  background: #e75656;
+}
+body .birthday_inner__stage .cakemake .filling-cream {
+  background: #fff;
+}
+body .birthday_inner__stage .cakemake .filling-cream div {
+  background: #fff;
+}
+body .birthday_inner__stage .cakemake .filling-choc {
+  background: #9f3d28;
+}
+body .birthday_inner__stage .cakemake .filling-choc div {
+  background: #9f3d28;
+}
+body .birthday_inner__stage .cakemake .filling-lemon {
+  background: #e8e086;
+}
+body .birthday_inner__stage .cakemake .filling-lemon div {
+  background: #e8e086;
+}
+body .birthday_inner__stage .options {
+  position: relative;
+  left: 12px;
+}
+body .birthday_inner__stage .options .sponges {
+  margin-right: 40px;
+}
+body .birthday_inner__stage .options .inactive {
+  opacity: 0.6;
+  pointer-events: none;
+}
+body .birthday_inner__stage .options .sponges, body .birthday_inner__stage .options .fillings {
+  float: left;
+  position: relative;
+}
+body .birthday_inner__stage .options .sponges h3, body .birthday_inner__stage .options .fillings h3 {
+  text-align: left;
+  color: #a25a58;
+  font-size: 20px;
+}
+body .birthday_inner__stage .options .sponges h5, body .birthday_inner__stage .options .fillings h5 {
+  float: right;
+  margin: 0;
+  color: #e77572;
+  position: absolute;
+  top: 20px;
+  right: 14px;
+  font-size: 20px;
+}
+body .birthday_inner__stage .options .sponges .item, body .birthday_inner__stage .options .fillings .item {
+  float: left;
+  margin-right: 14px;
+}
+body .birthday_inner__stage .options .sponges .item_inner, body .birthday_inner__stage .options .fillings .item_inner {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: all 0.12s;
+}
+body .birthday_inner__stage .options .sponges .item_inner:hover, body .birthday_inner__stage .options .fillings .item_inner:hover {
+  border: 3px solid white;
+}
+body .birthday_inner__stage .options .sponges .item .vanilla, body .birthday_inner__stage .options .fillings .item .vanilla {
+  background: #ffd296;
+}
+body .birthday_inner__stage .options .sponges .item .strawberry, body .birthday_inner__stage .options .fillings .item .strawberry {
+  background: #ff99a3;
+}
+body .birthday_inner__stage .options .sponges .item .fruit, body .birthday_inner__stage .options .fillings .item .fruit {
+  background: #d5ccb2;
+}
+body .birthday_inner__stage .options .sponges .item .jam, body .birthday_inner__stage .options .fillings .item .jam {
+  background: #e75656;
+}
+body .birthday_inner__stage .options .sponges .item .cream, body .birthday_inner__stage .options .fillings .item .cream {
+  background: #fff;
+}
+body .birthday_inner__stage .options .sponges .item .choc, body .birthday_inner__stage .options .fillings .item .choc {
+  background: #9f3d28;
+}
+body .birthday_inner__stage .options .sponges .item .lemon, body .birthday_inner__stage .options .fillings .item .lemon {
+  background: #e8e086;
+}
+body .birthday_inner__stage .options .sponges .item h4, body .birthday_inner__stage .options .fillings .item h4 {
+  margin: 0;
+  color: #e77572;
+}
+body .birthday_inner__stage button {
+  clear: both;
+  font-family: "Damion", cursive;
+  background: transparent;
+  border: 2px solid #e77572;
+  color: #e77572;
+  font-size: 22px;
+  padding: 14px 28px;
+  border-radius: 40px;
+  transition: all 0.23s;
+  outline: none;
+  cursor: pointer;
+}
+body .birthday_inner__stage button:hover {
+  background: #e77572;
+  color: white;
+}
+body .birthday_inner__stage .start {
+  margin-top: 30px;
+  -webkit-animation: in 0.8s 0.9s forwards;
+          animation: in 0.8s 0.9s forwards;
+  position: relative;
+  top: -20px;
+  opacity: 0;
+}
+
+.sa {
+  margin-top: 70px;
+  display: none;
+}
+
+.svg {
+  margin-bottom: 40px;
+}
+
+svg {
+  width: 390px;
+  height: 90px;
+  margin-bottom: -20px;
+  display: none;
+}
+
+@-webkit-keyframes bounce {
   0% {
-    transform: scale(1);
+    transform: scale(0);
   }
   25% {
-    transform: scale(1.1);
+    transform: scale(1.06);
   }
-  40% {
-    transform: scale(1);
+  50% {
+    transform: scale(0.965);
   }
-  60% {
-    transform: scale(1.1);
+  75% {
+    transform: scale(1.02);
   }
   100% {
     transform: scale(1);
   }
 }
 
-.text-glow {/*Definig font could be useful!*/
-   font-size:4em;
-   color: #000000;
-   font-family:Cinzel Decorative;
-   }
-.text-glow:hover {
-text-shadow: 1px 0px 20px #ffd200;
--webkit-transition: 1s linear 0s;
--moz-transition: 1s linear 0s;
--o-transition: 1s linear 0s;
-transition: 1s linear 0s;
-outline: 0 none;
-   }
-
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1.06);
+  }
+  50% {
+    transform: scale(0.965);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-
-body {
-    margin: 0
+@-webkit-keyframes in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-    display: block
+@keyframes in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-audio,
-canvas,
-progress,
-video {
-    color:white;
-    display: inline-block;
-    vertical-align: baseline;
-}
-
-audio:not([controls]) {
-    display: none;
-    height: 0
-}
-
-[hidden],
-template {
-    display: none
-}
-
-a {
-    background-color: transparent
-}
-
-a:active,
-a:hover {
-    outline: 0
-}
-
-abbr[title] {
-    border-bottom: 1px dotted
-}
-
-b,
-strong {
-    font-weight: bold
-}
-
-dfn {
-    font-style: italic
-}
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0
-}
-
-mark {
-    background: #ff0;
-    color: #000
-}
-
-small {
-    font-size: 80%
-}
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline
-}
-
-sup {
-    top: -0.5em
-}
-
-sub {
-    bottom: -0.25em
-}
-
-img {
-    border: 0
-}
-
-svg:not(:root) {
-    overflow: hidden
-}
-
-figure {
-    margin: 1em 40px
-}
-
-hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0
-}
-
-pre {
-    overflow: auto
-}
-
-code,
-kbd,
-pre,
-samp {
-    font-family: monospace, monospace;
-    font-size: 1em
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0
-}
-
-button {
-    overflow: visible
-}
-
-button,
-select {
-    text-transform: none
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer
-}
-
-button[disabled],
-html input[disabled] {
-    cursor: default
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0
-}
-
-input {
-    line-height: normal
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    height: auto
-}
-
-input[type="search"] {
-    -webkit-appearance: textfield;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none
-}
-
-fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em
-}
-
-legend {
-    border: 0;
-    padding: 0
-}
-
-textarea {
-    overflow: auto
-}
-
-optgroup {
-    font-weight: bold
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-
-td,
-th {
-    padding: 0
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: #E9E8E4;
-    font-size: 20px;
-    font-family: circular, sans-serif;
-    color: #1d1d1b
-}
-
-a {
-    color: #1d1d1b
-}
-
-::-webkit-input-placeholder {
-    color: #666
-}
-
-::-moz-placeholder {
-    color: #666
-}
-
-:-ms-input-placeholder {
-    color: #666
-}
-
-input:-moz-placeholder {
-    color: #666
-}
-
-.scenes {
-    position: relative;
-    margin-left: 0 auto;
-    width: 100%
-}
-
-.items {
-    width: 100%;
-    position: absolute;
+@-webkit-keyframes moveup {
+  from {
     top: 0;
-    left: 0;
-    height: 100%
+  }
+  to {
+    top: -30px;
+  }
 }
-
-.overflow {
-    width: 100%;
-    overflow: hidden;
-    position: relative
-}
-
-.scene {
-    margin-top: -2px;
-    width: 100%;
-    height: 768px;
-    position: relative;
-    /* background: url(http://asmitashinde.com/projects/css/images/birthday//scene-1.svg) 50% 0 repeat-x; */
-    background: url(res/scene-1.svg) 50% 0 repeat-x;
-    background-size: auto 768px;
-    z-index: 10;
-    -webkit-transform: translate3d(0, 0, 0)
-}
-
-body.scale .scene {
-    height: 100vh;
-    background-size: cover
-}
-
-.scene-1 {
-    height: 1828px;
-    background-size: 1920px auto;
-    background-position: 50% -100px
-}
-
-.scene-2 {
-    background-image: url(res/scene-2.svg)
-}
-
-.scene-3 {
-    background-image: url(res/scene-3.svg)
-}
-
-.scene-4 {
-    background-image: url(res/scene-4.svg)
-}
-
-.scene-5 {
-    background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
-    /* background-image: url(http://asmitashinde.com/projects/css/images/birthday//scene-5.svg) */
-}
-
-.scene-6 {
-    background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
-    cursor: crosshair;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    font-family: "Pacifico", cursive;
-}
-
-.scene-4-text {
-    position: absolute;
-    z-index: 30;
-    top: -240px;
-    left: 50%;
-    width: 300px;
-    margin-left: -150px;
-    text-align: center
-}
-
-.grounded {
-    width: 1px;
-    margin: 0 auto;
-    position: relative;
-    top: 636px;
-    display:block;
-}
-
-.batter {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: 0;
-    bottom: 295px;
-    position: absolute;
-    background: url(res/batter.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 25;
-    -webkit-transform: translate3d(0, 0, 0);
-    display:inline;
-
-}
-
-.batter {
-    bottom: auto;
-    top: 0
-}
-
-.batter-1{
-    margin-left: -5px;
-    top :-10px;
-
-}
-
-.batter-2 {
-    margin-left: 30px
-}
-
-.batter-3 {
-    margin-left: -73px;
-    top :-10px;
-}
-
-.batter-4{
-    margin-left: 2px
-}
-
-.batter-5{
-    margin-left: -52px
-}
-
-.batter-6 {
-    margin-left: -5px
-}
-
-.batter-7 {
-    margin-left: -1px
-}
-
-.egg,
-.egg-2 {
-    width: 84px;
-    height: 108px;
-    top: 540px;
-    position: relative;
-    margin: 0 auto;
-    background: url(res/egg.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 20;
-    -webkit-transform: translate3d(0, 0, 0)
-}
-
-.egg-2 {
-    top: 450px
-}
-
-.blender {
-    left: 50%;
-    bottom: 270px;
-    margin-left: -105px;
-    width: 210px;
-    height: 358px;
-    position: absolute;
-    background: url(res/blender.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 30
-}
-
-
-
-.batter-in-blender {
-    left: 50%;
-    bottom: -150px;
-    margin-left: -96px;
-    width: 200px;
-    height: 358px;
-    position: absolute;
-    z-index: 30;
-    background-size: 100% auto;
-}
-/*
-.egg-trial{
-    left:54%;
-
-    margin-left: -105px;
-    width: 70px;
-    height: 558px;
-    position: absolute;
-    background: url(http://asmitashinde.com/projects/css/images/birthday//egg-trial.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 30
-
-}*/
-.flour {
-    left:61%;
-    bottom: 470px;
-    margin-left: -105px;
-    width: 210px;
-    height: 358px;
-    position: absolute;
-    background: url(res/flour.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 30
-}
-
-
-.sugar {
-    right:60%;
-    bottom: 470px;
-    margin-right: -105px;
-    width: 210px;
-    height: 358px;
-    position: absolute;
-    background: url(res/sugar.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 30
-}
-
-
-.blender>.handle {
-    width: 228px;
-    height: 228px;
-    position: absolute;
-    background: url(res/blender-handle.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 100;
-    top: 180px;
-    left: -10px;
-    -webkit-transform: translate3d(0, 0, 0)
-}
-
-.pan-wrapper {
-    left: 50%;
-    margin-left: -118px;
+@keyframes moveup {
+  from {
     top: 0;
-    width: 236px;
-    height: 134px;
-    position: absolute
+  }
+  to {
+    top: -30px;
+  }
+}
+@-webkit-keyframes mix {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(28px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes mix {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(28px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes candle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes candle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.text path {
+  -webkit-animation: dash_loader 4s 2s forwards;
+          animation: dash_loader 4s 2s forwards;
 }
 
-.pan-hide {
-    left: 50%;
-    top: 250px;
-    width: 1px;
-    height: 1px;
-    position: absolute
+@-webkit-keyframes dash_loader {
+  to {
+    stroke-dasharray: 920;
+  }
 }
 
-.pan,
-.pan-with-batter {
-    left: 50%;
-    margin-left: -118px;
-    top: 0px;
-    width: 236px;
-    height: 134px;
-    position: absolute
+@keyframes dash_loader {
+  to {
+    stroke-dasharray: 920;
+  }
 }
-
-.pan .background,
-.pan-with-batter .background {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: url(res/pan.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 20
+path, polyline, line {
+  stroke-dasharray: 718;
+  stroke-dashoffset: 750;
+  stroke-width: 1px;
+  stroke-miterlimit: 40;
+  stroke-linejoin: round;
+  fill: none;
+  stroke: #e77572;
+  z-index: 1;
+  opacity: 1;
 }
-
-.pan .foreground,
-.pan-with-batter .foreground {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: url(res/pan.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 50;
-
-}
-
-.pan-with-batter  {
-    position: relative;
-    height: 100%;
-    z-index: 20
-}
-
-.oven-hide {
-    position: absolute;
-    bottom: 251px;
-    left: 0;
-    width: 100%;
-    height: 268px
-}
-
-.oven {
-    left: 50%;
-    bottom: 251px;
-    width: 306px;
-    height: 368px;
-    position: absolute;
-    background: url(res/oven.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 50;
-   margin-left: -150px;
-
-}
-
-
-.cake {
-    margin: 0 auto;
-    top: -380px;
-    width: 300px;
-    height: 250px;
-    z-index: 30;
-    position: relative
-}
-
-.cake>.inside {
-    position: relative;
-    background: url(http://asmitashinde.com/projects/css/images/birthday//cake.svg) 0 0 no-repeat;
-    background-size: 100% auto;
-    z-index: 30;
-    height: 100%
-}
-
-.start-pouring {
-    position: absolute;
-    top: 1200px;
-    width: 100%;
-    left: 0;
-    height: 1px;
-    z-index: 30
-}
-
-.egg-pouring {
-    position: absolute;
-    top: 1200px;
-    width: 100%;
-    left: 0;
-    height: 1px;
-    z-index: 30
-}
-.candle {
-    position: absolute;
-    left: 112px;
-    bottom:0;
-    width: 70px;
-    height: 220px;
-    background: url(http://asmitashinde.com/projects/css/images/birthday//candle.svg) 0 0 no-repeat;
-    z-index: 20
-}
-
-.egg-stop {
-    position: absolute;
-    left: 0;
-    z-index: 30;
-    width: 100%;
-    top: 1390px
-}
-
-.hide {
-    visibility: hidden;
-    z-index: 0
-}
-
-.ScrollSceneIndicators {
-    z-index: 1000 !important
-}
-
-.just-form .scene {
-    min-height: 100vh;
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%
-}
-
-
-
-.egg-trial{
-    left: 48%;
-    width: 70px;
-    height: 558px;
-    position: absolute;
-    z-index: 30;
-}
-
-.text {
-    margin: 0 auto;
-    width: 280px;
-    text-align: center;
-    overflow: hidden;
-    color:white;
-}
-
-
-#hat{
-    margin: 0 auto;
-    width: 280px;
-    text-align: center;
-    overflow: hidden;
-    position: absolute;
-    z-index: 20;
-    margin: 0;
-    padding: 0;
-    left: 47%;
-    fill:white;stroke:#000000;stroke-miterlimit:10;
-
-}
-
-
-.text h1,
-.text h2 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-indent: 100%;
-    position: absolute;
-    z-index: 20;
-    margin: 0;
-    padding: 0;
-    left: 50%;
-    color:white;
-}
-
-.text h1 {
-    width: 90px;
-    height: 96px;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    margin-left: -45px;
-    top: 90px
-}
-
-.text h2 {
-    width: 180px;
-    height: 52px;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    margin-left: -90px;
-    top: 190px
-}
-
-.text p span {
-    display: block
-}
-
-.scene-1 .text {
-    padding-top: 280px
-}
-
-.scene-1 .text-bottom {
-    padding-top: 1060px
-}
-
-.scene-2 .text {
-    padding-top: 550px
-}
-
-.scene-3 .text {
-    padding-top: 550px
-}
-
-.scene-4 .text {
-    padding-top: 530px
-}
-
-.scene-5 .text {
-    padding-top: 530px
-}
-
-/* .scene-6 .text {
-    padding-top: 580px
-} */
-
-.intro {
-    font-size: 20px;
-    margin-top: 10px;
-    color:#B7B7B7;
-
-}
-.intro1 {
-    color:white;
-}
-
-
-.myInfo {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    position: absolute;
-    bottom: 35px;
-    width: 100%;
-    left: 0
-}
-
-.myInfo>li {
-    display: inline-block;
-    margin: 5px 20px
-}
-
-.myInfo>li>a {
-    display: inline-block;
-    white-space: nowrap;
-    vertical-align: middle;
-}
-
-
-
-#date {
-    position: absolute;
-    z-index: 20;
-   left:25%;
-    color:white;
-    width: 102px;
-    height: 124px;
-    top:21%;
-    font-size: 30px;
-}
-.hbd{
-
-    position: absolute;
-    z-index: 20;
-    right:35%;
-    color:white;
-    width: 102px;
-    height: 124px;
-    top:10%;
-    font-size: 50px;
-}
-
-button{
-    background: transparent;
-    border: 10px !important;
-    display: inline-block;
-    vertical-align: baseline;
-    text-decoration: underline;
-}
-
-.codepen{
-    color:white;
-}
-/*# sourceMappingURL=full.css.map */
